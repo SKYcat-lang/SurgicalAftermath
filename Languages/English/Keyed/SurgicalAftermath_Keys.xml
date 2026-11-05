@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SA_SettingsCategory>Surgical Aftermath</SA_SettingsCategory>
+  <SA_Setting_ProtectScarRemoval_Label>Protect scar-removal surgeries</SA_Setting_ProtectScarRemoval_Label>
+  <SA_Setting_ProtectScarRemoval_Desc>When enabled, if a surgery removes or reduces existing permanent injuries (scars), the resulting surgical wound will have a 0% chance of becoming a new surgical scar.</SA_Setting_ProtectScarRemoval_Desc>
+
+</LanguageData>

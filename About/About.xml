@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Surgical Aftermath (수술 후유증)</name>
+  <author>gahee</author>
+  <packageId>gahee.surgicalaftermath</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>수술 후 환자에게 수술 창상과 후유증을 추가하는 심플한 모드입니다.
+Adds surgical wounds, scars, and post-surgical aftereffects following medical operations.
+
+[한국어 설명]
+• 수술 창상 및 수술 흉터: 외과 수술이 끝난 후 수술 부위에 치료가 필요한 '수술 창상'이 남으며, 회복 과정에서 일정 확률로 '수술 흉터'가 남을 수 있습니다. (단순 목제 의수/의족/틀니 부착 등은 제외)
+• 수술 후유증: 장기 이식이나 적출 등 큰 수술을 받은 경우 '수술 후유증(회복기 / 중증도 / 심각함)' 상태이상이 부여되며, 완치될 때까지 지속적인 치료와 안정이 필요합니다.
+
+[English Description]
+• Surgical Wound &amp; Surgical Scar: Leaves a tendable 'surgical wound' on the operated part after surgery, with a chance to leave a permanent 'surgical scar' upon healing (excludes simple wooden prosthetics/dentures).
+• Surgical Aftereffect: Major operations such as organ transplants or removals inflict 'surgical aftereffect (recovering / moderate / severe)', requiring continuous tending to recover.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+</ModMetaData>

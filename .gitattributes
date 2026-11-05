@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.cs text eol=crlf
+*.xml text eol=crlf
+*.png binary
+*.dll binary

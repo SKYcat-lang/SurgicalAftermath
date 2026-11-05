@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 1. 수술 창상 (SA_SurgicalWound) -->
+  <SA_SurgicalWound.label>수술 창상</SA_SurgicalWound.label>
+  <SA_SurgicalWound.labelNoun>수술 창상</SA_SurgicalWound.labelNoun>
+  <SA_SurgicalWound.description>외과 수술 과정에서 절개 및 봉합으로 인해 남은 상처입니다. 지혈 및 소독 처치가 필요하며, 회복 과정에서 수술 흉터가 남을 수 있습니다.</SA_SurgicalWound.description>
+  <SA_SurgicalWound.comps.HediffCompProperties_TendDuration.labelTendedWell>봉합됨</SA_SurgicalWound.comps.HediffCompProperties_TendDuration.labelTendedWell>
+  <SA_SurgicalWound.comps.HediffCompProperties_TendDuration.labelTendedWellInner>봉합됨</SA_SurgicalWound.comps.HediffCompProperties_TendDuration.labelTendedWellInner>
+  <SA_SurgicalWound.comps.HediffCompProperties_TendDuration.labelSolidTendedWell>고정됨</SA_SurgicalWound.comps.HediffCompProperties_TendDuration.labelSolidTendedWell>
+  <SA_SurgicalWound.comps.HediffCompProperties_GetsPermanent.permanentLabel>수술 흉터</SA_SurgicalWound.comps.HediffCompProperties_GetsPermanent.permanentLabel>
+  <SA_SurgicalWound.comps.HediffCompProperties_GetsPermanent.instantlyPermanentLabel>수술 흉터</SA_SurgicalWound.comps.HediffCompProperties_GetsPermanent.instantlyPermanentLabel>
+
+  <!-- 2. 수술 후유증 (SA_PostSurgicalAftereffect) -->
+  <SA_PostSurgicalAftereffect.label>수술 후유증</SA_PostSurgicalAftereffect.label>
+  <SA_PostSurgicalAftereffect.labelNoun>수술 후유증</SA_PostSurgicalAftereffect.labelNoun>
+  <SA_PostSurgicalAftereffect.description>수술 직후 신체가 겪는 외상 후유증입니다. 수술 부위의 안정과 회복을 위해 꾸준한 치료를 받아야 하며, 방치할 경우 상태가 악화됩니다.</SA_PostSurgicalAftereffect.description>
+  <SA_PostSurgicalAftereffect.stages.recovering.label>회복기</SA_PostSurgicalAftereffect.stages.recovering.label>
+  <SA_PostSurgicalAftereffect.stages.moderate.label>중증도</SA_PostSurgicalAftereffect.stages.moderate.label>
+  <SA_PostSurgicalAftereffect.stages.severe.label>심각함</SA_PostSurgicalAftereffect.stages.severe.label>
+  <SA_PostSurgicalAftereffect.stages.0.label>회복기</SA_PostSurgicalAftereffect.stages.0.label>
+  <SA_PostSurgicalAftereffect.stages.1.label>중증도</SA_PostSurgicalAftereffect.stages.1.label>
+  <SA_PostSurgicalAftereffect.stages.2.label>심각함</SA_PostSurgicalAftereffect.stages.2.label>
+
+</LanguageData>

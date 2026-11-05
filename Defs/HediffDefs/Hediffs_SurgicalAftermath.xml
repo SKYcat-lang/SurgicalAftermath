@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 1. Surgical wound (Hediff_Injury, requires tending, high chance to become a surgical scar) -->
+  <HediffDef ParentName="InjuryBase">
+    <defName>SA_SurgicalWound</defName>
+    <label>surgical wound</label>
+    <labelNoun>a surgical wound</labelNoun>
+    <description>An incision wound left by a surgical operation. Requires tending to stop bleeding and prevent infection, and may leave a surgical scar upon healing.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>sutured</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.10</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>surgical scar</permanentLabel>
+        <instantlyPermanentLabel>surgical scar</instantlyPermanentLabel>
+        <becomePermanentChanceFactor>15.0</becomePermanentChanceFactor>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.0035</averagePainPerSeverityPermanent>
+      <bleedRate>0.02</bleedRate>
+      <canMerge>false</canMerge>
+      <useRemovedLabel>true</useRemovedLabel>
+    </injuryProps>
+  </HediffDef>
+
+  <!-- 2. Post-surgical aftereffect (HediffWithComps, requires continuous tending after major surgery) -->
+  <HediffDef ParentName="DiseaseBase">
+    <defName>SA_PostSurgicalAftereffect</defName>
+    <label>surgical aftereffect</label>
+    <labelNoun>surgical aftereffects</labelNoun>
+    <description>Traumatic aftereffects suffered by the body immediately following surgery. Requires continuous medical tending to stabilize and recover, and will worsen if left untreated.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.85, 0.55, 0.3)</defaultLabelColor>
+    <makesSickThought>true</makesSickThought>
+    <tendable>true</tendable>
+    <initialSeverity>0.65</initialSeverity>
+    <minSeverity>0.001</minSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>24</baseTendDurationHours>
+        <severityPerDayTended>-0.38</severityPerDayTended>
+        <showTendQuality>true</showTendQuality>
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.10</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>recovering</label>
+        <painOffset>0.05</painOffset>
+        <partEfficiencyOffset>-0.10</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>0.35</minSeverity>
+        <label>moderate</label>
+        <painOffset>0.12</painOffset>
+        <partEfficiencyOffset>-0.20</partEfficiencyOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.70</minSeverity>
+        <label>severe</label>
+        <painOffset>0.22</painOffset>
+        <partEfficiencyOffset>-0.35</partEfficiencyOffset>
+        <vomitMtbDays>1.5</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

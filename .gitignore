@@ -1,0 +1,14 @@
+# Build intermediates
+**/bin/
+**/obj/
+
+# IDE and user-specific files
+.vs/
+.idea/
+*.suo
+*.user
+**/*.local.props
+
+# Runtime logs and debug symbols
+*.log
+*.pdb

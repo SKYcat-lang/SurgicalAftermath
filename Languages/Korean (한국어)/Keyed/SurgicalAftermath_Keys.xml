@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SA_SettingsCategory>수술 후유증 (Surgical Aftermath)</SA_SettingsCategory>
+  <SA_Setting_ProtectScarRemoval_Label>흉터 제거 의도의 수술 보호</SA_Setting_ProtectScarRemoval_Label>
+  <SA_Setting_ProtectScarRemoval_Desc>활성화 시, 수술을 통해 기존의 영구 부상(흉터)이 제거되거나 줄어든 경우 수술 창상이 새로운 '수술 흉터'로 남을 확률을 0%로 방지합니다.</SA_Setting_ProtectScarRemoval_Desc>
+
+</LanguageData>

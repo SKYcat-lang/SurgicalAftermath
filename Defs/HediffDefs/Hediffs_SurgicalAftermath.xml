@@ -42,7 +42,7 @@
     <makesSickThought>true</makesSickThought>
     <tendable>true</tendable>
     <initialSeverity>0.65</initialSeverity>
-    <minSeverity>0.001</minSeverity>
+    <minSeverity>0</minSeverity>
     <maxSeverity>1.0</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_TendDuration">
